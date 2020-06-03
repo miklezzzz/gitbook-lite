@@ -1,6 +1,6 @@
 ---
-description: 'Тип: облегченный'
+description: 'Type: lite'
 ---
 
-# Начальная страница
+# Initial page
 

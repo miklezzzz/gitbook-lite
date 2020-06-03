@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Начальная страница](README.md)
+* [Initial page](README.md)
 
