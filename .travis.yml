@@ -4,12 +4,17 @@ node_js:
 install:
 - npm install -g gitbook-cli@2.3.2
 - git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
-- ls -lR
-- cd docs
-- gitbook install
 script:
-- cd docs
+- git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
+- cp -rv docs/Общие\ сведения/ gitbook-standard/docs
+- cd gitbook-standard/docs
+- gitbook install
 - gitbook build
+after_script:
+- git add ../docs
+- git commit -m "travis autocommit"
+- git status
+- git push https://$GITLOGIN:$GITPASS@github.com/miklezzzz/gitbook-standard.git ru
 env:
   global:
   - secure: ExUCtxLh/BMBGFB59gdeY52ch/Uts0pKopYCoIyHiGTMZlubFQlWJMO5XakJ+CBr+3oCMt12tGKmRxvYt5zFPY5ieI7emZNeGeBPXrNt3BgAsdNxRpgfgsY5XgfhTcb9IhUT7P8GhFghhLJtAwC0E7tmCwqEjEJJcWhQR+OnSZzRNWh1cOvj271agq+KRYSXTkmjcU4OoLPgWOXJgs9Yqm7YfAbKFUtdIefmILaw8I1x5GAIDD8r6s/4Kc2ZIpgz4p4DGmzOScTyFcF9G1lIDnrH5KDT0cRMneq63zxEs9MO2u4dRqHnXVyssL8rexo5KRx9fuh80ax1padfPiff/VNZY9y3Ce2S+ZGi9ymIsGnSV9LSbzluQP7h6QgBycVKLQGe19d2ZeszFmkgyrVD2HmTSQZx25hLHtpHo+tNozYzkExb+WPfF7ERGsm5xxxheKaDGa+SKCj4+0Yy2jB8KEFZBgln0AMytosIsEoWp7voSVaqI6zUtd+RcEQNOTSo73s2qI29rg41BOt/jh/xShOqvFDavfjak9SXXouw0X8xCGHsxF7a7Z0onTjydVrDqVHNOjVWy5wQlftILeKPLn5ZgrCmUx/WNObGEv+7gbmVTINS90RTCfvvRdzGSDH+kgniZ5g8Fzl6rj4WqHCrngmBInb3WdylFlgH3qBwYMQ=
