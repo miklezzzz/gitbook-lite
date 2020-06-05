@@ -5,7 +5,7 @@ install:
 - npm install -g gitbook-cli@2.3.2
 - git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
 script:
-- cp -rv docs/Общие\ сведения/ gitbook-standard/docs
+- cp -rv "docs/Общие сведения" gitbook-standard/docs/
 - cd gitbook-standard/docs
 - gitbook install
 - gitbook build
