@@ -6,6 +6,7 @@ install:
 script:
 - diff --line-format=%L gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md || true
 - diff --line-format=%L gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md > gitbook-standard/SUMMARY.md || true
+- cat gitbook-standard/SUMMARY.md
 - cp -rv gitbook-lite/docs/* gitbook-standard/docs/
 - cd gitbook-standard
 - git add .
