@@ -7,9 +7,9 @@ script:
 - diff --line-format=%L gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md > gitbook-standard/SUMMARY.md || true
 - cp -rv gitbook-lite/docs/* gitbook-standard/docs/
 - cd gitbook-standard
-- git add ./
-- git commit -m "travis autocommit"
+- git add ./docs
 - git status
+- git commit -m "travis autocommit" || true
 - git push https://$GITLOGIN:$GITPASS@github.com/miklezzzz/gitbook-standard.git ru
 env:
   global:
