@@ -1,9 +1,9 @@
 language: minimal
 install:
 - cd ..
-- ls -l
 - git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
 script:
+- diff -v
 - diff --line-format=%L ./gitbook-lite/SUMMARY.md ./gitbook-standard/SUMMARY.md > ./gitbook-standard/SUMMARY.md
 - cp -rv ./gitbook-lite/docs/* ./gitbook-standard/docs/
 after_script:
