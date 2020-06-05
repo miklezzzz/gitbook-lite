@@ -1,9 +1,8 @@
 language: minimal
+dist: bionic
 install:
 - cd ..
 - git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
-- apt-get update 
-- apt-get install diff
 script:
 - diff -v
 - diff --line-format=%L ./gitbook-lite/SUMMARY.md ./gitbook-standard/SUMMARY.md > ./gitbook-standard/SUMMARY.md
