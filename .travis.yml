@@ -5,7 +5,8 @@ install:
 - git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
 script:
 - diff --line-format=%L gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md || true
-- diff --line-format=%L gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md > gitbook-standard/SUMMARY.md || true
+- diff --line-format=%L gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md > gitbook-standard/SUMMARY-tmp.md || true
+- mv gitbook-standard/SUMMARY-tmp.md gitbook-standard/SUMMARY.md
 - cat gitbook-standard/SUMMARY.md
 - cp -rv gitbook-lite/docs/* gitbook-standard/docs/
 - cd gitbook-standard
