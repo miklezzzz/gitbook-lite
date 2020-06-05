@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '12'
+install:
+- npm install -g gitbook-cli@2.3.2
+- cd docs
+- gitbook install
+script:
+- cd docs
+- gitbook build
+env:
