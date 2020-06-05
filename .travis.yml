@@ -1,16 +1,13 @@
-language: node_js
-node_js:
-- '12'
+language: minimal
 install:
-- npm install -g gitbook-cli@2.3.2
+- cd ..
 - git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
 script:
-- cp -rv docs/Общие сведения gitbook-standard/docs/
-- cd gitbook-standard/docs
-- gitbook install
-- gitbook build
+- diff --line-format=%L ./gitbook-lite/SUMMARY.md ./gitbook-standard/SUMMARY.md > ./gitbook-standard/SUMMARY.md
+- cp -rv ./gitbook-lite/docs/* ./gitbook-standard/docs/ gitbook-standard
 after_script:
-- git add ../docs
+- cd gitbook-standard
+- git add ./
 - git commit -m "travis autocommit"
 - git status
 - git push https://$GITLOGIN:$GITPASS@github.com/miklezzzz/gitbook-standard.git ru
