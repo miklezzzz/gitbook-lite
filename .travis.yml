@@ -4,11 +4,11 @@ install:
 - cd ..
 - git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
 script:
-- diff --line-format=%L gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md || true
-- diff --line-format=%L gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md > gitbook-standard/SUMMARY-tmp.md || true
-- mv gitbook-standard/SUMMARY-tmp.md gitbook-standard/SUMMARY.md
+- cat gitbook-lite/SUMMARY.md-original gitbook-standard/SUMMARY.md | awk '!visited[$0]++'
+- cat gitbook-lite/SUMMARY.md-original gitbook-standard/SUMMARY.md | awk '!visited[$0]++' > gitbook-standard/SUMMARY.tmp
+- mv gitbook-standard/SUMMARY.tmp gitbook-standard/SUMMARY.md
 - cat gitbook-standard/SUMMARY.md
-- cp -rv gitbook-lite/docs/* gitbook-standard/docs/
+- cp -rv gitbook-lite/docs/qed-* gitbook-standard/docs/
 - cd gitbook-standard
 - git add .
 - git status
