@@ -10,4 +10,5 @@
   * [ПРПР](docs/obshie-svedeniya/opisanie-obshei-chasti/prpr.md)
   * [Автор устал](docs/obshie-svedeniya/opisanie-obshei-chasti/avtor-ustal.md)
 * [Индекс](docs/indeks.md)
+* [Добавила статью](docs/dobavila-statyu.md)
 
