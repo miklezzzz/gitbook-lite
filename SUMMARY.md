@@ -4,7 +4,9 @@
 
 ## Общие сведения
 
-* [Описание функционала облегченной версии](docs/obshie-svedeniya/qed-opisanie-funkcionala-oblegchennoi-versii.md)
+* [Описание функционала облегченной версии](docs/obshie-svedeniya/qed-opisanie-funkcionala-oblegchennoi-versii/README.md)
+  * [level 1](docs/obshie-svedeniya/qed-opisanie-funkcionala-oblegchennoi-versii/qed-level-1/README.md)
+    * [level 2](docs/obshie-svedeniya/qed-opisanie-funkcionala-oblegchennoi-versii/qed-level-1/level-2.md)
 * [Об авторе](docs/obshie-svedeniya/qed-opisanie-obshei-chasti/README.md)
   * [ПРПР](docs/obshie-svedeniya/qed-opisanie-obshei-chasti/qed-prpr.md)
   * [Автор устал](docs/obshie-svedeniya/qed-opisanie-obshei-chasti/qed-avtor-ustal.md)
