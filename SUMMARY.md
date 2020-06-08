@@ -9,7 +9,6 @@
   * [ПРПР](docs/obshie-svedeniya/opisanie-obshei-chasti/prpr.md)
   * [Автор устал](docs/obshie-svedeniya/opisanie-obshei-chasti/avtor-ustal.md)
 * [Индекс](docs/quick-indeks.md)
-* [Untitled](docs/untitled.md)
 * [Новая статья про что-то](docs/novaya-statya-pro-chto-to.md)
 * [Группы и роли](docs/gruppy-i-roli.md)
 
