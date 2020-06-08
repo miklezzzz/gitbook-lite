@@ -8,7 +8,7 @@ script:
 - cat gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md | awk '!NF || !seen[$0]++' | uniq > gitbook-standard/SUMMARY.tmp
 - mv gitbook-standard/SUMMARY.tmp gitbook-standard/SUMMARY.md
 - cat gitbook-standard/SUMMARY.md
-- find /gitbook-lite/docs -type f -name "qed-*.so" -exec cp {} dst/ \;
+- find gitbook-lite/docs -type f -name "qed-*.so" -exec cp {} dst/ \;
 - cp -rv gitbook-lite/docs/qed-* gitbook-standard/docs/
 - cd gitbook-standard
 - git add .
