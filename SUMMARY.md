@@ -9,5 +9,5 @@
 * [Об авторе](docs/obshie-svedeniya/opisanie-obshei-chasti/README.md)
   * [ПРПР](docs/obshie-svedeniya/opisanie-obshei-chasti/prpr.md)
   * [Автор устал](docs/obshie-svedeniya/opisanie-obshei-chasti/avtor-ustal.md)
-* [Индекс](docs/indeks.md)
+* [Индекс](docs/quick-indeks.md)
 
