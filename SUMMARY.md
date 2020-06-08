@@ -10,3 +10,7 @@
   * [Автор устал](docs/obshie-svedeniya/opisanie-obshei-chasti/avtor-ustal.md)
 * [Индекс](docs/quick-indeks.md)
 
+## Бизнес-процессы
+
+* [Задача](docs/biznes-processy/zadacha.md)
+
