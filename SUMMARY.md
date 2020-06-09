@@ -15,4 +15,5 @@
 
 * [Задача](docs/biznes-processy/qed-zadacha.md)
 * [Индекс](docs/biznes-processy/qed-quick-indeks.md)
+* [Новая статья](docs/novaya-statya.md)
 
