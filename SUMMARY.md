@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Введение](README.md)
+* [Тест для гуглбота](docs/2-qe-test-dlya-guglbota.md)
 
 ## 1. Общие сведения <a id="1-obshie-svedeniya"></a>
 
