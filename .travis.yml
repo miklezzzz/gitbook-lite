@@ -4,12 +4,12 @@ install:
 - cd ..
 - git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
 script:
-- cat gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md | awk '!NF || !seen[$0]++' | uniq
-- cat gitbook-lite/SUMMARY.md gitbook-standard/SUMMARY.md | awk '!NF || !seen[$0]++' | uniq > gitbook-standard/SUMMARY.tmp
-- mv gitbook-standard/SUMMARY.tmp gitbook-standard/SUMMARY.md
-- cat gitbook-standard/SUMMARY.md
+- mkdir -p gitbook-standard/docs
 - cp -rv gitbook-lite/docs/* gitbook-standard/docs/
 - cd gitbook-standard
+- ./gitbook-summary -bookDir ./ -srcSum ../gitbook-lite/SUMMARY.md
+- cat ./SUMMARY.tmp
+- mv ./SUMMARY.tmp ./SUMMARY.md
 - git add .
 - git status
 - git commit -m "travis autocommit" || true
