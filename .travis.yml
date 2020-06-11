@@ -2,7 +2,7 @@ language: minimal
 dist: bionic
 install:
 - cd ..
-- git clone https://github.com/miklezzzz/gitbook-standard.git -b ru
+- git clone https://$GITLOGIN:$GITPASS@github.com/miklezzzz/gitbook-standard.git -b ru
 script:
 - mkdir -p gitbook-standard/docs
 - cp -rv gitbook-lite/docs/* gitbook-standard/docs/
