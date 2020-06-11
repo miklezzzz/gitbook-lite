@@ -6,6 +6,7 @@ install:
 script:
 - mkdir -p gitbook-standard/docs
 - cp -rv gitbook-lite/docs/* gitbook-standard/docs/
+- cp -rv gitbook-lite/docs/.gitbook gitbook-standard/docs/
 - cd gitbook-standard
 - ./gitbook-summary -bookDir ./ -srcSum ../gitbook-lite/SUMMARY.md
 - cat ./SUMMARY.tmp
