@@ -15,4 +15,5 @@
 
 * [Задача](docs/2-biznes-processy/1-qe-task.md)
 * [Индекс](docs/10-qe-quick-indeks.md)
+* [Исполнительская дисциплина](docs/ispolnitelskaya-disciplina.md)
 
