@@ -2,5 +2,5 @@
 
 Большой и страный индекс, да!!!!
 
-![trinity](.gitbook/assets/penguins.jpg)
+![trinity](../.gitbook/assets/penguins.jpg)
 
