@@ -1,4 +1,24 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Введение](README.md)
+* [Тест для гуглбота](2-qe-test-dlya-guglbota.md)
+
+## 1. Общие сведения <a id="1-obshie-svedeniya"></a>
+
+* [1.1 Описание функционала облегченной версии](1-obshie-svedeniya/1-qe-opisanie-funkcionala-oblegchennoi-versii/README.md)
+  * [1.1.1 level 1](1-obshie-svedeniya/1-qe-opisanie-funkcionala-oblegchennoi-versii/1-qe-level-1/README.md)
+    * [1.1.1.1 level 2](1-obshie-svedeniya/1-qe-opisanie-funkcionala-oblegchennoi-versii/1-qe-level-1/1-ee-level-2.md)
+* [1.2 Об авторе](1-obshie-svedeniya/2-qe-opisanie-obshei-chasti/README.md)
+  * [1.2.1 ПРПР](1-obshie-svedeniya/2-qe-opisanie-obshei-chasti/1-qe-prpr.md)
+  * [1.2.2 Автор устал](1-obshie-svedeniya/2-qe-opisanie-obshei-chasti/2-qe-avtor-ustal.md)
+
+## 2. ОПИСАНИЕ РЕЛИЗА <a id="2-opisanie-reliza"></a>
+
+* [Виды релизов](2-opisanie-reliza/1-ee-vidy-relizov.md)
+
+## 3. Бизнес-процессы <a id="3-biznes-processy"></a>
+
+* [Задача](3-biznes-processy/1-qe-task.md)
+* [Индекс](3-biznes-processy/10-qe-quick-indeks.md)
+* [Исполнительская дисциплина](6-qe-ispolnitelskaya-disciplina.md)
 
